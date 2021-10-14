@@ -10,7 +10,7 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
 }
 
-h3 {
+h5 {
   text-align: center;
   color: 	#c48d3f;
   font-family: 'Courier New', Courier, monospace;
@@ -23,5 +23,9 @@ h3 {
 }
 
 .myContainer {
+  background-color: #81f1f7;
+}
+
+.fixed-top {
   background-color: #81f1f7;
 }

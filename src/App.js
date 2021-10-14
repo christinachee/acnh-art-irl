@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ReactTooltip from "react-tooltip";
 
 import "./App.css";
-import MapChart from "./MapChart";
+import MapChart from "./component/MapChart";
 
-import MyOffCanvas from './component/offCanvas'
+import MyOffCanvas from './component/offCanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
 
@@ -25,13 +25,18 @@ function App() {
     console.log(data)
   }
 
+
   return (
     <div class="myContainer">
       <Container>
         {showMyOffCanvas ? <MyOffCanvas toggleShow={toggleShow} data={locationData} /> : null}
         <h1>ACNH art location IRL</h1>
-        <h3>click the red dots to view details</h3>
-        <MapChart setTooltipContent={setContent} toggleShow={toggleShow} handleLocationData={handleLocationData} />
+          <h5>click the red dots to view details</h5>
+        <MapChart
+          setTooltipContent={setContent}
+          toggleShow={toggleShow}
+          handleLocationData={handleLocationData}
+        />
         <ReactTooltip
           class="myToolTip"
           multiline={true}

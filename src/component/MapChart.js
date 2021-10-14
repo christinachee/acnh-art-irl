@@ -7,8 +7,8 @@ import {
     ZoomableGroup
 } from "react-simple-maps";
 
-import "./MapChart.css";
-import { markers_by_location } from "./data";
+import "../styles/MapChart.css";
+import { markers_by_location } from "../data";
 
 const geoUrl =
     "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-50m.json";
